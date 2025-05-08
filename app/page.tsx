@@ -63,6 +63,18 @@ export default function Home() {
                   <Button variant="outline" asChild>
                     <Link href="#projects">View My Work</Link>
                   </Button>
+
+                  <div className="flex items-center gap-2">
+                  <Button>
+                    <FileText className="h-5 w-5 text-primary" />
+                    <Link href="/resume (4).pdf" className="" download>
+                    Resume
+                    </Link>
+                    </Button>
+                  </div>
+                  
+
+
                 </div>
                 <div className="flex gap-4">
                   <Link href="https://github.com/ianmolbisht" target="_blank" rel="noopener noreferrer">
