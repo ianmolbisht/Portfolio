@@ -16,6 +16,11 @@ interface TakeawayCardProps {
 }
 
 export function TakeawayCard({ title, description, type, url, date, course }: TakeawayCardProps) {
+  const isImage = url.endsWith(".png") ||
+                  url.endsWith(".jpg") ||
+                  url.endsWith(".jpeg") ||
+                  url.endsWith(".svg")
+
   return (
     <Card className="overflow-hidden">
       <CardHeader className="p-4">
@@ -27,20 +32,27 @@ export function TakeawayCard({ title, description, type, url, date, course }: Ta
           </Badge>
         </div>
       </CardHeader>
+
       <CardContent className="p-4 pt-0">
         <p className="text-sm text-muted-foreground">{description}</p>
-        {type === "notes" && (
+        {type === "notes" && isImage && (
           <div className="mt-4">
             <Image
               src={url || "/placeholder.svg"}
-              alt={title}
+              alt={`Preview of ${title}`}
               width={400}
               height={200}
               className="rounded-md object-cover"
             />
           </div>
         )}
+        {type === "notes" && !isImage && (
+          <div className="mt-4 w-full text-sm text-muted-foreground whitespace-pre-wrap border rounded-md p-3 bg-muted">
+            {url} {/* Display text content */}
+          </div>
+        )}
       </CardContent>
+
       <CardFooter className="p-4 flex flex-col items-start gap-2">
         <div className="flex items-center text-xs text-muted-foreground">
           <Calendar className="mr-1 h-3 w-3" />

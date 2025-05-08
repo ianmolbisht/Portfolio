@@ -40,12 +40,13 @@ export default function Home() {
         </div>
       </header>
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-              <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-[url('/pimg.jpg')] bg-cover bg-center relative">
+    <div className="absolute inset-0 bg-black opacity-30"></div> {/* Semi-transparent overlay */}
+    <div className="container px-4 md:px-6 relative z-10"> {/* Content on top */}
+      <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+        <div className="flex flex-col justify-center space-y-4">
+          <div className="space-y-2">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                     Hi, I'm <span className="text-primary">Anmol Bisht</span>
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
@@ -126,8 +127,8 @@ export default function Home() {
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:gap-16 mt-12">
               <div className="space-y-6">
                 <h3 className="text-xl font-bold">Technical Skills</h3>
-                <SkillBar name="HTML/CSS" percentage={65} />
-                <SkillBar name="JavaScript" percentage={50} />
+                <SkillBar name="C/C++" percentage={90} />
+                <SkillBar name="Next.js" percentage={40} />
                 <SkillBar name="IoT" percentage={70} />
                 {/* <SkillBar name="Node.js" percentage={35} /> */}
                 <SkillBar name="Python" percentage={70} />
@@ -212,109 +213,107 @@ export default function Home() {
                 </TabsList>
                 <TabsContent value="all" className="mt-6">
                   <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    <TakeawayCard
-                      title="Web Development Fundamentals"
-                      description="Key concepts and best practices in modern web development"
-                      type="video"
-                      url="https://example.com/video1"
-                      date="March 15, 2023"
-                      course="Web Development 101"
-                    />
-                    <TakeawayCard
-                      title="Data Structures & Algorithms"
-                      description="Notes on efficient problem-solving approaches and algorithm complexity"
+                  <TakeawayCard
+                      title="WEEK-I"
+                      description="Career Development and Self-Awareness"
                       type="notes"
-                      url="/placeholder.svg?height=300&width=400"
-                      date="April 22, 2023"
-                      course="Computer Science Fundamentals"
-                    />
+                      url="/week1.pdf"
+                      date="March, 2025" course={"PESE"}
+                      />
+
+
                     <TakeawayCard
-                      title="UI/UX Design Principles"
-                      description="Creating user-centered designs with focus on accessibility and usability"
-                      type="video"
-                      url="https://example.com/video2"
-                      date="May 10, 2023"
-                      course="User Interface Design"
-                    />
-                    <TakeawayCard
-                      title="Database Management"
-                      description="Comprehensive notes on relational and NoSQL database systems"
+                      title="WEEK-II"
+                      description="SWOC Analysis (Self-Evaluation & Growth Planning)"
                       type="notes"
-                      url="/placeholder.svg?height=300&width=400"
-                      date="June 5, 2023"
-                      course="Database Systems"
+                      url="/week2.pdf"
+                      date="March, 2025" course={"PESE"}
                     />
                     <TakeawayCard
-                      title="Mobile App Development"
-                      description="Building cross-platform mobile applications with React Native"
-                      type="video"
-                      url="https://example.com/video3"
-                      date="July 18, 2023"
-                      course="Mobile Development"
-                    />
-                    <TakeawayCard
-                      title="Cloud Computing"
-                      description="Overview of cloud services, deployment models, and best practices"
+                      title="WEEK-III"
+                      description="Mastering Presentation Skills"
                       type="notes"
-                      url="/placeholder.svg?height=300&width=400"
-                      date="August 30, 2023"
-                      course="Cloud Computing Fundamentals"
+                      url="/week3.pdf"
+                      date="April, 2025" course={"PESE"}
+                    />
+                    <TakeawayCard
+                      title="WEEK-IV"
+                      description="Effective Writing Skills"
+                      type="notes"
+                      url="/week4.pdf"
+                      date="April, 2025" course={"PESE"}
+                    />
+                  <TakeawayCard
+                      title="Group Presentation"
+                      description="Group Presentation on Online Tutoring System"
+                      type="video"
+                      url="/video3"
+                      date="April, 2025"
+                      course="PESE"
+                    />
+                    <TakeawayCard
+                      title="Personal Profiling"
+                      description=""
+                      type="video"
+                      url="/video3"
+                      date="April, 2025"
+                      course="PESE"
                     />
                   </div>
                 </TabsContent>
                 <TabsContent value="videos" className="mt-6">
                   <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                   
+          
                     <TakeawayCard
-                      title="Web Development Fundamentals"
-                      description="Key concepts and best practices in modern web development"
+                      title="Group Presentation"
+                      description="Group Presentation on Online Tutoring System"
                       type="video"
-                      url="https://example.com/video1"
-                      date="March 15, 2023"
-                      course="Web Development 101"
+                      url="/video3"
+                      date="April, 2025"
+                      course="PESE"
                     />
                     <TakeawayCard
-                      title="UI/UX Design Principles"
-                      description="Creating user-centered designs with focus on accessibility and usability"
+                      title="Personal Profiling"
+                      description=""
                       type="video"
-                      url="https://example.com/video2"
-                      date="May 10, 2023"
-                      course="User Interface Design"
-                    />
-                    <TakeawayCard
-                      title="Mobile App Development"
-                      description="Building cross-platform mobile applications with React Native"
-                      type="video"
-                      url="https://example.com/video3"
-                      date="July 18, 2023"
-                      course="Mobile Development"
+                      url="/video3"
+                      date="April, 2025"
+                      course="PESE"
                     />
                   </div>
                 </TabsContent>
                 <TabsContent value="notes" className="mt-6">
                   <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    <TakeawayCard
-                      title="Data Structures & Algorithms"
-                      description="Notes on efficient problem-solving approaches and algorithm complexity"
+                  <TakeawayCard
+                      title="WEEK-I"
+                      description="Career Development and Self-Awareness"
                       type="notes"
-                      url="/placeholder.svg?height=300&width=400"
-                      date="April 22, 2023"
-                      course="Computer Science Fundamentals"
+                      url="/week1.pdf"
+                      date="March, 2025" course={"PESE"}
+                      />
+
+
+                    <TakeawayCard
+                      title="WEEK-II"
+                      description="SWOC Analysis (Self-Evaluation & Growth Planning)"
+                      type="notes"
+                      url="/week2.pdf"
+                      date="March, 2025" course={"PESE"}
                     />
                     <TakeawayCard
-                      title="Database Management"
-                      description="Comprehensive notes on relational and NoSQL database systems"
+                      title="WEEK-III"
+                      description="Mastering Presentation Skills"
                       type="notes"
-                      url="/placeholder.svg?height=300&width=400"
-                      date="June 5, 2023"
-                      course="Database Systems"
+                      url="/week3.pdf"
+                      date="April, 2025" course={"PESE"}
                     />
                     <TakeawayCard
-                      title="Cloud Computing"
-                      description="Overview of cloud services, deployment models, and best practices"
+                      title="WEEK-IV"
+                      description="Effective Writing Skills"
                       type="notes"
-                      url="/placeholder.svg?height=300&width=400"
-                      date="August 30, 2023"
-                      course="Cloud Computing Fundamentals"
+                      url="/week4.pdf"
+                      date="April, 2025" course={"PESE"}
                     />
                   </div>
                 </TabsContent>
@@ -343,9 +342,10 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-2">
                     <FileText className="h-5 w-5 text-primary" />
-                    <Link href="#" className="underline">
+                    <Link href="/resume.pdf" className="underline" download>
                       Download Resume
                     </Link>
+
                   </div>
                 </div>
                 <div className="flex gap-4">

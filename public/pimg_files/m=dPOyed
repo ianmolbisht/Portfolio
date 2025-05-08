@@ -1,0 +1,12 @@
+"use strict";loaded_1_12(function(_){var window=this;
+_.p("uVB85");
+_.jdg=function(a,b,c,d){b=b.oa();if(_.G(b,10)&&(b=a.Kb("sTFXNd").el())){var e,f=(e=d.fz)==null?void 0:e.call(d,c);f?(a=_.Eo(a.getRoot().getData("ved"),"")||"",_.jq(f,"ved",a),_.jq(f,"vet",_.Kfb(a)),_.Ka(b,f.toString())):b.removeAttribute("href");_.jf(b,"navigation","server")}};
+_.q();
+_.p("dPOyed");
+_.kdg=function(){};_.eT=function(a){_.wh.call(this,a.Ya);this.historyId=null;this.oa=a.model.Se;this.Aa=a.model.XG;this.Dq=a.service.config;this.Ea=a.service.yya;this.fV=a.service.c3;this.Xe=a.service.Xe;this.Af=a.service.component;this.Hb=a.Gb.Hb;this.Xj=_.Had(a.service.window.get());a=this.Dq;var b=this.Xe.pM();_.jdg(this,a,b,this.oa)};_.F(_.eT,_.wh);_.eT.Ja=function(){return{Gb:{Hb:_.Ws},model:{Se:_.Okf,XG:_.Hkf},service:{config:_.Ow,ZE:_.Mt,yya:_.U1b,OQa:_.L0b,component:_.Zt,c3:_.bT,Xe:_.vv,window:_.zu}}};
+_.k=_.eT.prototype;_.k.Wg=function(){return this.oa.Wg()};_.k.mgb=function(a){a.event.preventDefault();a=_.Rg(this.getRoot().el(),3,_.Cf(this.getRoot().getData("ictx"),-1));var b=this.Wg().Ec(),c=_.HWc(b),d=_.Ug(this.getRoot().el(),3),e=new Map,f=this.Xe.lT();f&&e.set("bmtq",f);this.Xe.YWb();a={Op:this.qYa(),Dda:b.getUniqueId(),clusterId:this.Aa.zP.id(),dba:_.Eo(this.getRoot().getData("deckid"),""),Qc:a,kd:d,Ot:c,gpa:e};_.kdg(a);this.bTb(a);return!0};_.k.QIc=function(){};_.k.Bnb=function(){};
+_.k.bTb=function(a){this.Xe.aVb();this.Xe.navigateToView(a)};_.k.MKb=function(){return this.qYa().getBoundingClientRect()};_.k.nF=function(){};_.k.fya=function(a){_.W1b(this.Ea,a,{oha:!0})};_.k.qYa=function(){return this.Wa("sTFXNd").el()};_.N(_.eT.prototype,"PIddz",function(){return this.qYa});_.N(_.eT.prototype,"s370ud",function(){return this.fya});_.N(_.eT.prototype,"geL4Eb",function(){return this.nF});_.N(_.eT.prototype,"C9WJgd",function(){return this.MKb});_.N(_.eT.prototype,"cJhY7b",function(){return this.Bnb});
+_.N(_.eT.prototype,"LW2zqd",function(){return this.QIc});_.N(_.eT.prototype,"J9iaEb",function(){return this.mgb});_.N(_.eT.prototype,"qVMRKd",function(){return this.Wg});_.eu(_.Fdb,_.eT);
+_.q();
+});
+// Google Inc.
