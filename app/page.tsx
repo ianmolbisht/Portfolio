@@ -343,7 +343,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-2">
                     <FileText className="h-5 w-5 text-primary" />
-                    <Link href="/resume.pdf" className="underline" download>
+                    <Link href="/resume (4).pdf" className="underline" download>
                       Download Resume
                     </Link>
 
@@ -365,7 +365,7 @@ export default function Home() {
                   <Link href="https://x.com/ianmolbisht" target="_blank" rel="noopener noreferrer">
                     <Button variant="outline" size="icon">
                       <Code className="h-5 w-5" />
-                      <span className="sr-only">CodePen</span>
+                      <span className="sr-only">X</span>
                     </Button>
                   </Link>
                 </div>
