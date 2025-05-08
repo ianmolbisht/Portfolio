@@ -45,14 +45,15 @@ export default function Home() {
     <div className="container px-4 md:px-6 relative z-10"> {/* Content on top */}
       <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
         <div className="flex flex-col justify-center space-y-4">
-          <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Hi, I'm <span className="text-primary">Anmol Bisht</span>
-                  </h1>
-                  <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    A passionate Computer Science Student at Graphic Era Hill University.
-                  </p>
-                </div>
+        <div className="space-y-2 w-full text-white">
+  <h1 className="text-3xl font-bold tracking-tight sm:text-5xl xl:text-6xl">
+    Hi, I'm <span className="text-white">Anmol Bisht</span>
+  </h1>
+  <p className="text-base sm:text-lg max-w-full">
+    A passionate Computer Science Student...
+  </p>
+</div>
+
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Button asChild>
                     <Link href="#contact">
